@@ -17,7 +17,7 @@ spec:
       secretName: haritejnarayan-com
   rules:
     - host: haritejnarayan.com
-    - http:
+      http:
         paths:
           - path: /?(.*)
             pathType: Prefix
@@ -34,7 +34,7 @@ spec:
                 port:
                   number: 5000
     - host: www.haritejnarayan.com
-    - http:
+      http:
         paths:
           - path: /?(.*)
             pathType: Prefix
