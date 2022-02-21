@@ -8,6 +8,6 @@ docker push haritejnarayan/multi-client:$SHA
 docker push haritejnarayan/multi-server:$SHA
 docker push haritejnarayan/multi-worker:$SHA
 kubectl apply -f k8s
-kubectl set image deployments/client-deployment client=haritejnarayan/multi-client$SHA
-kubectl set image deployments/server-deployment server=haritejnarayan/multi-server$SHA
-kubectl set image deployments/worker-deployment worker=haritejnarayan/multi-worker$SHA
+kubectl set image deployments/client-deployment client=haritejnarayan/multi-client:$SHA
+kubectl set image deployments/server-deployment server=haritejnarayan/multi-server:$SHA
+kubectl set image deployments/worker-deployment worker=haritejnarayan/multi-worker:$SHA
